@@ -14,9 +14,10 @@ The objects to be erased are as follows.
 - $GOPATH/pkg/mod/cache/download/github.com/realsangil/modcleaner/@v/v0.0.1.mod
 - $GOPATH/pkg/mod/cache/download/github.com/realsangil/modcleaner/@v/v0.0.1.zip
 - $GOPATH/pkg/mod/cache/download/github.com/realsangil/modcleaner/@v/v0.0.1.ziphash
-- $GOPATH/pkg/mod/cache/vcs/module_vcs
-- $GOPATH/pkg/mod/cache/vcs/module_vcs.lock
-- $GOPATH/pkg/mod/cache/vcs/module_vcs.info
+- $GOPATH/pkg/mod/cache/vcs/d5eb110f070eed22f7a69bc52fec68e273092374
+- $GOPATH/pkg/mod/cache/vcs/d5eb110f070eed22f7a69bc52fec68e273092374.lock
+- $GOPATH/pkg/mod/cache/vcs/d5eb110f070eed22f7a69bc52fec68e273092374.info
+
 
 
 ## Install
@@ -28,7 +29,10 @@ go get -u github.com/realsangil/modcleaner
 ## Usage
 
 ```sh
-modcleaner -v github.com/realsangil/modcleaner
+modcleaner -v pkg0 pkg1 pkg2... 
+
+# root permission
+sudo GOPATH=/path/to/gopath modcleaner -v pkg0 pkg1 pkg2... 
 ```
 
 ## Author
