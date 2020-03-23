@@ -1,0 +1,23 @@
+run:
+  tests: false
+
+linters:
+  enable-all: true
+  disable:
+    - prealloc
+    - funlen
+    - maligned
+    - wsl
+    - gochecknoinits
+    - gosimple
+    - gochecknoglobals
+    - lll
+    - godox
+    - gocyclo
+    - scopelint
+    - gocognit
+    - gocritic
+
+issues:
+  max-same-issues: 5
+  max-issues-per-linter: 5
